@@ -25,4 +25,13 @@ git config --global alias.unstage 'reset HEAD --'
 echo 'Reloading shell settings...'
 source $HOME/.bash_profile
 
+echo -e "Installing Homebrew fonts."
+if [[ -n $(command -v brew) ]]
+  then
+    brew tap homebrew/cask-fonts
+    brew cask install font-fira-code
+    brew cask install font-fira-mono
+    brew cask install font-fira-sans
+fi
+
 echo -e "Done \xE2\x9C\x94"
