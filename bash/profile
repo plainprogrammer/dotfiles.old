@@ -1,0 +1,4 @@
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+# Aliases
+alias gs="git status"
