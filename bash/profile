@@ -1,3 +1,6 @@
+# Copyright (c) 2018 James Thompson <james@thomps.onl>
+# This code is licensed under the MIT license (see LICENSE for details)
+
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # Aliases
