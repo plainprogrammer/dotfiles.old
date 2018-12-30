@@ -5,16 +5,24 @@
 
 SOURCE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+cat $SOURCE_DIR/README
+
+echo 'Symlinking Bash profile into place...'
 ln -nfs $SOURCE_DIR/bash/profile $HOME/.bash_profile
 
-# Configure global git settings
+echo 'Configuring global git configurations...'
 git config --global user.name "James Thompson"
 git config --global user.email "james@thomps.onl"
 git config --global core.excludesfile $SOURCE_DIR/.gitignore
 
-# Configure global git aliases
+echo 'Configuring global git aliases...'
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 git config --global alias.unstage 'reset HEAD --'
+
+echo 'Reloading shell settings...'
+source $HOME/.bash_profile
+
+echo -e "Done \xE2\x9C\x94"
