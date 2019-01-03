@@ -34,3 +34,4 @@ export PATH="$HOME/bin:$PATH"
 
 # Aliases
 alias gs="git status"
+alias ls="ls -lksah --color"
