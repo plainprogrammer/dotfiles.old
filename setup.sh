@@ -61,6 +61,9 @@ if [[ -n $(command -v brew) ]]
     brew cask install font-fira-code
     brew cask install font-fira-mono
     brew cask install font-fira-sans
+
+    echo -e "Installing rbenv"
+    brew install rbenv
 fi
 
 echo 'Symlinking Bash profile into place...'
