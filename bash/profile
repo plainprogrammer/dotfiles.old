@@ -1,6 +1,35 @@
 # Copyright (c) 2018 James Thompson <james@thomps.onl>
 # This code is licensed under the MIT license (see LICENSE for details)
 
+# Homebrew Installed GNU coreutils
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+# Homebrew installed GNU gettext
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/gettext/lib"
+export CPPFLAGS="-I/usr/local/opt/gettext/include"
+
+# Homebrew installed GNU readline
+export LDFLAGS="-L/usr/local/opt/readline/lib"
+export CPPFLAGS="-I/usr/local/opt/readline/include"
+
+# Homebrew installed libffi
+export LDFLAGS="-L/usr/local/opt/libffi/lib"
+
+# Homebrew installed GNU m4
+export PATH="/usr/local/opt/m4/bin:$PATH"
+
+# Homebrew install GNU make
+PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/make/libexec/gnuman:$MANPATH"
+
+# Homebrew installed unzip
+export PATH="/usr/local/opt/unzip/bin:$PATH"
+
+# Personal bin path
+export PATH="$HOME/bin:$PATH"
+
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # Aliases
