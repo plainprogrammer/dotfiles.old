@@ -44,6 +44,13 @@ if [[ -n $(command -v brew) ]]
     brew install unzip
     brew install vim --override-system-vi
 
+    if [[ -z $(brew cask list | grep setapp) ]]
+      then
+        echo -e "Installing Setapp"
+        brew cask install setapp
+        open /usr/local/Caskroom/setapp/1.18.1,1539860348/Install\ Setapp.app
+    fi
+
     if [[ -z $(brew cask list | grep visual-studio-code) ]]
       then
         echo -e "Installing Visual Studio Code"
@@ -54,6 +61,12 @@ if [[ -n $(command -v brew) ]]
       then
         echo -e "Installing JetBrains Toolbox"
         brew cask install jetbrains-toolbox
+    fi
+
+    if [[ -z $(brew cask list | grep keybase) ]]
+      then
+        echo -e "Installing Keybase"
+        brew cask install keybase
     fi
 
     echo -e "Installing Homebrew fonts"
