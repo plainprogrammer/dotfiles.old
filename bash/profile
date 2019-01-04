@@ -32,6 +32,9 @@ export PATH="$HOME/bin:$PATH"
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
+# Ensure rbenv is initialized
+eval "$(rbenv init -)"
+
 # Aliases
 alias gs="git status"
 alias ls="ls -lksah --color"
