@@ -34,6 +34,10 @@ export PATH="/usr/local/opt/unzip/bin:$PATH"
 # Personal bin path
 export PATH="$HOME/bin:$PATH"
 
+# Use Vim as the default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # Ensure rbenv is initialized
