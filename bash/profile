@@ -38,3 +38,8 @@ eval "$(rbenv init -)"
 # Aliases
 alias gs="git status"
 alias ls="ls -lksah --color"
+
+# Integrate Local-only Customizations
+if [[ -f $HOME/.bash_local ]]; then
+  source $HOME/.bash_local
+fi
