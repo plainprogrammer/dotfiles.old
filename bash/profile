@@ -43,6 +43,9 @@ export EDITOR="$VISUAL"
 # Ensure rbenv is initialized
 eval "$(rbenv init -)"
 
+# Customize the prompt
+export PS1='\n$(pwd)\n$ '
+
 # Aliases
 alias gs="git status"
 alias ls="ls -lksah --color"
