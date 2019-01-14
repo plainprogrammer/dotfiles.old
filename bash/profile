@@ -49,6 +49,10 @@ export PS1='\n$(pwd)\n$ '
 # Aliases
 alias gs="git status"
 alias ls="ls -lksah --color"
+alias e="vim"
+
+# Ensure GPG password collection works
+export GPG_TTY=$(tty)
 
 # Integrate Local-only Customizations
 if [[ -f $HOME/.bash_local ]]; then
