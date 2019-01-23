@@ -76,7 +76,9 @@ if [[ -n $(command -v brew) ]]
     brew cask install font-fira-sans
 
     echo -e "Installing rbenv"
-    brew install rbenv
+    git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+    cd ~/.rbenv && src/configure && make -C src
+    git clone git://github.com/tpope/rbenv-readline.git $HOME/.rbenv/plugins/rbenv-readline
 fi
 
 echo 'Symlinking Bash profile into place...'

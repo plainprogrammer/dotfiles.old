@@ -41,6 +41,7 @@ export EDITOR="$VISUAL"
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # Ensure rbenv is initialized
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # Customize the prompt
