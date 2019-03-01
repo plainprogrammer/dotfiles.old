@@ -44,8 +44,14 @@ export EDITOR="$VISUAL"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# Git Prompt
+if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+  __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
+  source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
+fi
+
 # Customize the prompt
-export PS1='\n$(pwd)\n$ '
+#export PS1='\n$(pwd)\n$ '
 
 # Aliases
 alias gs="git status"

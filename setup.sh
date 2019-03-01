@@ -33,6 +33,7 @@ if [[ -n $(command -v brew) ]]
     brew install wdiff --with-gettext
     brew install wget
     brew install bash
+    brew install bash-git-prompt
     brew install gpatch
     brew install less
     brew install m4
